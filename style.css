@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+}
+* {
+  box-sizing: border-box;
+}
+.grid-example {
+  display: flex;
+  flex-wrap: wrap;
+} 
+.grid-example > div {
+  flex: 0 0 100%;
+  padding: .5rem;
+}
+
+
+/*@media (max-width:900px) {
+  .grid-example > div {
+    flex: 0 0 33.3%;
+  }
+}
+@media (max-width:750px) {
+  .grid-example > div {
+    flex: 0 0 50%;
+  }
+}
+@media (max-width:600px) {
+  .grid-example > div {
+    flex: 0 0 100%;
+  }
+}*/
+
+@media (min-width:600px) {
+  .grid-example > div {
+    flex: 0 0 50%;
+  }
+}
+@media (min-width:750px) {
+  .grid-example > div {
+    flex: 0 0 33.3%;
+  }
+}
+@media (min-width:900px) {
+  .grid-example > div {
+    flex: 0 0 25%;
+  }
+}
+
+
+article { 
+  padding: .5rem;
+}
+.float-right {
+  float: right;
+  margin-left: 10px;
+}
+.float-left {
+  float: left;
+  margin-right: 10px;
+}
+article img {
+ width: 350px;
+}
+
+@media (max-width: 900px) {
+  article img {
+    width: 300px;
+  }
+}
+@media (max-width: 750px) {
+  article img {
+    width: 250px;
+  }
+}
+@media (max-width: 600px) {
+  article img {
+   width: 100%;
+  }
+}
+
+p {
+  font-size: 1.3rem;
+}
+
+
+@media (max-width: 900px) {
+  p {
+    font-size: 1.2rem;
+  }
+}
+@media (max-width: 750px) {
+  p {
+    font-size: 1.1rem;
+  }
+}
+@media (max-width: 600px) {
+  p {
+    font-size: 1rem;
+  }
+}
+
+
+
